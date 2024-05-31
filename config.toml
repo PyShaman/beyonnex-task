@@ -1,0 +1,21 @@
+[users]
+    user_1 = 'standard_user'
+    user_2 = 'locked_out_user'
+    user_3 = 'problem_user'
+    user_4 = 'performance_glitch_user'
+    user_5 = 'error_user'
+    user_6 = 'visual_user'
+    password = 'secret_sauce' # this can be stored in environmental variables
+
+[checkout_user.persona_a]
+first_name = 'John'
+last_name = 'Wayne'
+postal_code = '12345'
+[checkout_user.persona_b]
+first_name = 'Lucy'
+last_name = 'Liu'
+postal_code = '23456'
+[checkout_user.persona_c]
+first_name = 'Alfred'
+last_name = 'Onigiri'
+postal_code = '34567'
