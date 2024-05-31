@@ -19,13 +19,11 @@ def browser_setup(pytestconfig):
         options = webdriver.ChromeOptions()
         options.add_argument("--headless")
         browser.config.driver = webdriver.Chrome(service=Service(), options=options)
-        browser.driver().maximize_window()
     elif browser_name == 'firefox':
         options = webdriver.FirefoxOptions()
         options.add_argument("--headless")
         from selenium.webdriver.firefox.service import Service
         browser.config.driver = webdriver.Firefox(service=Service(), options=options)
-        browser.driver().maximize_window()
     else:
         raise ValueError(f"Unsupported browser: {browser_name}")
     yield
